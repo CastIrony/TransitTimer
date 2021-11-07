@@ -167,9 +167,9 @@ struct DialView: View {
     let dialColor: Color = .white
     var body: some View {
         ZStack {
-            Circle()
-                .fill(dialColor)
-                .frame(width: dialRadius * 2, height: dialRadius * 2, alignment: .center)
+//            Circle()
+//                .fill(dialColor)
+//                .frame(width: dialRadius * 2, height: dialRadius * 2, alignment: .center)
             ForEach(Array(arrivals.enumerated()), id: \.element.id) { index, arrival in
                 RingView(
                     dialRadius: dialRadius,
